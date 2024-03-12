@@ -1,0 +1,2 @@
+# Ignore Node.js generated files and folders
+node_modules/

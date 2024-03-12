@@ -1,0 +1,161 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.06rem;
+  background: transparent;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--color-N05);
+
+  & .logo-wrapper {
+    grid-column: 2/6;
+    align-items: center;
+    display: grid;
+    grid-row: 1;
+    margin-block-end: auto;
+
+    & svg {
+      width: 160px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .site-header {
+    padding-top: var(--margin-small-mobile);
+    padding-bottom: var(--margin-small-mobile);
+
+    & .logo-wrapper {
+      grid-column: 1/8;
+      margin-block-start: 0.5rem;
+
+      & svg {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.main-navigation {
+  grid-column: 4/12;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .toggle {
+    border: none;
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+
+    & ul {
+      display: flex;
+      gap: 1.25rem;
+      margin-inline-end: 1rem;
+      padding-inline-start: 0;
+      list-style: none;
+    }
+
+    & li {
+      padding-block: 0.5rem;
+
+      & a {
+        display: inline-block;
+        font-weight: var(--system-font-weight-bold);
+        font-size: 1.125rem;
+        text-decoration: none;
+        color: var(--color-N90);
+      }
+    }
+
+    & .button-wrapper {
+      display: flex;
+      gap: 1rem;
+      margin-inline-start: 1rem;
+    }
+  }
+}
+
+@media (max-width: 64em) {
+  .main-navigation {
+    flex-direction: column;
+    align-items: flex-end;
+
+    & .toggle {
+      display: block;
+    }
+
+    & .nav-container {
+      display: none;
+      flex-direction: column;
+
+      & ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+        margin-block-start: 2rem;
+        margin-block-end: 1rem;
+      }
+
+      & .button-wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .site-header.expanded {
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+
+    & .nav-container {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .main-navigation {
+    grid-column: 4/13;
+  }
+}
+
+/*
+.site-header {
+  background-color: burlywood;
+
+  & .logo-wrapper {
+    background-color: sandybrown;
+
+    & svg {
+      background-color: hotpink;
+    }
+  }
+
+  .main-navigation {
+  
+    background-color: plum;
+  
+    & ul {
+      background-color: tomato;
+    }
+  
+    & li {
+      background-color: beige;
+  
+      & a {
+        background-color: lightcoral;
+      }
+    }
+  
+    & .button-wrapper {
+      background-color: lightgreen;
+    }
+  }
+}
+*/

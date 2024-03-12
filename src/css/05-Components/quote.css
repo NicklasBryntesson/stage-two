@@ -1,0 +1,53 @@
+.quote-section {
+  background: var(--color-T90);
+  padding: var(--big-padding-block) 0;
+
+  & .content-grid {
+    & .quote-inner {
+      grid-column: 4/10;
+
+      & p {
+        font-size: 2rem;
+        color: var(--color-T40);
+        line-height: 1.2;
+        letter-spacing: -0.32px;
+        margin-bottom: 1.25rem;
+      }
+
+      & span {
+        color: var(--color-full-white);
+        display: block;
+
+        &:first-of-type {
+          font-family: var(--system-font-bold);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 64em) {
+  .quote-section {
+    & .content-grid {
+      & .quote-inner {
+        grid-column: 2/12;
+        & p {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .quote-section {
+    & .content-grid {
+      & .quote-inner {
+        grid-column: 1/13;
+        & p {
+          font-size: 1.375rem;
+        }
+      }
+    }
+  }
+}

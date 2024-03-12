@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+  --color-full-white: hsl(0, 0%, 100%);
+  --color-full-black: hsl(0, 0%, 0%);
+
+  --color-G90: #021d13;
+  --color-G80: #033a26;
+  --color-G70: #055739;
+  --color-G60: #07744c;
+  --color-G50: #08915f;
+  --color-G40: #0aae72;
+  --color-G30: #0ccc85;
+
+  --color-T90: #361b15;
+  --color-T80: #532921;
+  --color-T70: #71372c;
+  --color-T60: #8e4637;
+  --color-T50: #ab5443;
+  --color-T40: #c8624e;
+  --color-T30: #e57159;
+
+  --color-N100: #000000;
+  --color-N90: #1c1c1f;
+  --color-N80: #353638;
+  --color-N70: #4e5050;
+  --color-N60: #676968;
+  --color-N50: #808280;
+  --color-N40: #999a99;
+  --color-N30: #b3b3b2;
+  --color-N20: #cccbcb;
+  --color-N10: #e4e4e4;
+  --color-N05: #f2f2f2;
+  --color-N00: #ffffff;
+
+  /* Grid */
+  --column-gap: 1.25rem; /* 20px */
+
+  /* Margins */
+  --margin-small-desktop: 2.5rem; /* 40px */
+  --margin-medium-desktop: 5rem; /* 80px */
+  --margin-large-desktop: 10rem; /* 160px */
+
+  --margin-small-mobile: 1.25rem; /* 20px */
+  --margin-medium-mobile: 2.5rem; /* 40px */
+  --margin-large-mobile: 5rem; /* 80px */
+
+  --big-padding-block: clamp(5rem, 3.725rem + 5.23vw, 10rem);
+}
+
+[data-theme="surface-R90"] {
+  background-color: var(--color-G90);
+}

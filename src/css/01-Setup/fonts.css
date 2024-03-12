@@ -1,0 +1,19 @@
+/* Import custom fonts here */
+
+@font-face {
+    font-family: "MatterSQ-Regular";
+    src: url("/fonts/MatterSQ-Regular.woff") format("woff"),
+         url("/fonts/MatterSQ-Regular.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: "MatterSQ-RegularItalic";
+    src: url("/fonts/MatterSQ-RegularItalic.woff") format("woff"),
+         url("f/onts/MatterSQ-RegularItalic.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: "MatterSQ-SemiBold";
+    src: url("/fonts/MatterSQ-SemiBold.woff") format("woff"),
+         url("/fonts/MatterSQ-SemiBold.woff2") format("woff2"),
+}

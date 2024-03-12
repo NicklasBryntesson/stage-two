@@ -1,0 +1,74 @@
+.price-hero {
+  position: relative;
+  display: grid;
+  grid: [stack] 100% / [stack] 100%;
+  color: var(--color-N00);
+  z-index: 10;
+  overflow: hidden;
+
+  & .content-grid {
+    grid-area: stack;
+    width: 100%;
+  }
+
+  & .hero-content {
+    grid-column: 2/12;
+    padding-block: 26rem 2.5rem;
+    grid-row: 1;
+    z-index: 2;
+
+    & h1 {
+      max-width: 18ch;
+      margin-block-end: 0.5rem;
+    }
+
+    & .preamble {
+      max-width: 50ch;
+      margin-block-start: 0;
+      margin-inline-end: auto;
+    }
+  }
+
+  & .hero-background {
+    grid-area: stack;
+    position: relative;
+    grid-row: 1;
+    z-index: 1;
+    overflow: hidden;
+
+    & img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      width: 120rem;
+      height: 100%;
+      opacity: 0.5;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+      z-index: 3;
+    }
+  }
+}
+
+@media (max-width: 64em) {
+  .price-hero {
+    .hero-content {
+      grid-column: 2/12;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .price-hero {
+    & .hero-content {
+      grid-column: 1/-1;
+    }
+  }
+}

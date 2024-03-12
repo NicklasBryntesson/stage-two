@@ -1,0 +1,50 @@
+.case {
+  padding-block: var(--big-padding-block);
+
+  & .case-content {
+    grid-column: 2/7;
+  }
+
+  & .case-thumbnail {
+    position: relative;
+    grid-column: 8/12;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    object-fit: cover;
+
+    & img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 64em) {
+  .case {
+    & .case-content {
+      grid-column: 2/12;
+      grid-row: 2;
+    }
+
+    & .case-thumbnail {
+      grid-column: 4/10;
+      grid-row: 1;
+      margin-block-end: 2rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .case {
+    & .case-content {
+      grid-column: 1/-1;
+    }
+
+    & .case-thumbnail {
+      grid-column: 2/12;
+    }
+  }
+}

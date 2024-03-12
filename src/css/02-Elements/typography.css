@@ -1,0 +1,214 @@
+/* Design Constants */
+:root {
+  /* Theme Fonts */
+  --system-font-body: "MatterSQ-Regular", sans-serif;
+  --system-font-bold: "MatterSQ-SemiBold", sans-serif;
+
+  --system-font-weight-body: 400;
+  --system-font-weight-bold: 600;
+
+  /* Mobile body sizes */
+  --system-font-size-body-mobile: 1rem; /* 16px */
+  --system-font-size-body-small-mobile: 0.875rem; /* 14px */
+  --system-font-size-body-large-mobile: 1.75rem; /* 28px */
+
+  /* Desktop body sizes */
+  --system-font-size-body-desktop: 1.25rem; /* 20px */
+  --system-font-size-body-small-desktop: 1rem; /* 16px */
+
+  /* Mobile heading sizes: */
+  --system-font-size-h1-mobile: 2.625rem; /* 42px */
+  --system-font-size-h2-mobile: 1.875rem; /* 30px */
+  --system-font-size-h3-mobile: 1.375rem; /* 22px */
+
+  /* Desktop heading sizes: */
+  --system-font-size-h1-desktop: 5.25rem; /* 84px */
+  --system-font-size-h2-desktop: 3.375rem; /* 54px */
+  --system-font-size-h3-desktop: 2rem; /* 32px */
+
+  --system-font-size-h1-clamp: clamp(2.625rem, 1.956rem + 2.75vw, 5.25rem);
+  --system-font-size-h2-clamp: clamp(1.875rem, 1.493rem + 1.57vw, 3.375rem);
+  --system-font-size-h3-clamp: clamp(1.375rem, 1.216rem + 0.65vw, 2rem);
+
+  /* Special typography mobile */
+  --system-font-size-preamble-mobile: 1.125rem; /* 18px */
+  --system-font-size-caption-mobile: 0.875rem; /* 14px */
+
+  /* Special typography desktop */
+  --system-font-size-preamble-desktop: 1.5rem; /* 24px */
+  --system-font-size-caption-desktop: 1rem; /* 16px */
+
+  /* Button sizes */
+  --system-font-size-button-small-mobile: 1rem; /* 16px */
+  --system-font-size-button-small-desktop: 1rem; /* 16px */
+
+  --system-font-size-button-large-mobile: 1.125rem; /* 16px */
+  --system-font-size-button-large-desktop: 1.25rem; /* 18px */
+}
+
+/* Font sizes - Screen below 1024 */
+@media (max-width: 64em) {
+  :root {
+    --system-font-size-body: var(--system-font-size-body-mobile);
+    --system-font-size-h1: var(--system-font-size-h1-mobile);
+    --system-font-size-h2: var(--system-font-size-h2-mobile);
+    --system-font-size-h3: var(--system-font-size-h3-mobile);
+    --system-font-size-h4: var(--system-font-size-h4-mobile);
+    --system-font-size-h5: var(--system-font-size-h5-mobile);
+    --system-font-size-h6: var(--system-font-size-h6-mobile);
+
+    /* Special typography */
+    --system-font-size-body-small: var(--font-size-body-small-mobile);
+    --system-font-size-body-large: var(--font-size-body-large-mobile);
+
+    --system-font-size-preamble: var(--system-font-size-preamble-mobile);
+    --system-font-size-caption: var(--system-font-size-caption-mobile);
+
+    /* Button sizes */
+    --system-font-size-button-small: var(
+      --system-font-size-button-small-mobile
+    );
+    --system-font-size-button-large: var(
+      --system-font-size-button-large-mobile
+    );
+  }
+}
+
+/* Font sizes - Screen above 1024 */
+@media (min-width: 64.01em) {
+  :root {
+    --system-font-size-body: var(--system-font-size-body-desktop);
+    --system-font-size-h1: var(--system-font-size-h1-desktop);
+    --system-font-size-h2: var(--system-font-size-h2-desktop);
+    --system-font-size-h3: var(--system-font-size-h3-desktop);
+    --system-font-size-h4: var(--system-font-size-h4-desktop);
+    --system-font-size-h5: var(--system-font-size-h5-desktop);
+    --system-font-size-h6: var(--system-font-size-h6-desktop);
+
+    /* Special typography */
+    --system-font-size-body-small: var(--system-font-size-body-small-desktop);
+    --system-font-size-body-large: var(--system-font-size-body-large-desktop);
+
+    --system-font-size-preamble: var(--system-font-size-preamble-desktop);
+    --system-font-size-caption: var(--system-font-size-caption-desktop);
+
+    /* Button sizes */
+    --system-font-size-button-small: var(
+      --system-font-size-button-small-desktop
+    );
+    --system-font-size-button-large: var(
+      --system-font-size-button-large-desktop
+    );
+  }
+}
+
+body {
+  font-family: var(--system-font-body);
+  font-size: var(--system-font-size-body);
+  font-weight: var(--system-font-weight-body);
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--system-font-heading);
+  font-weight: var(--system-font-weight-body);
+}
+
+h2,
+h3,
+h4 {
+  color: var(--color-G70);
+}
+
+h1,
+.fontSize-h1 {
+  font-size: var(--system-font-size-h1-clamp);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+h2,
+.fontSize-h2 {
+  font-size: var(--system-font-size-h2-clamp);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h3,
+.fontSize-h3 {
+  font-size: var(--system-font-size-h3-clamp);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h4,
+.fontSize-h4 {
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+}
+
+p {
+  font-family: var(--system-font-body);
+  font-weight: var(--system-font-weight-body);
+  font-size: var(--system-font-size-body);
+  line-height: 1.4;
+}
+
+.preamble {
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  font-size: var(--system-font-size-preamble);
+}
+
+input,
+textarea {
+  font-family: var(--system-font-heading);
+  font-weight: var(--system-font-weight-heading);
+}
+
+a {
+  font-family: var(--system-font-body);
+  color: inherit;
+  line-height: inherit;
+  text-decoration: underline;
+  color: var(--color-G70);
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: var(--color-G50);
+  }
+}
+
+button {
+  font-family: var(--system-font-heading);
+  font-weight: var(--system-font-weight-heading);
+  line-height: 1.1;
+}
+
+strong,
+b {
+  font-weight: 700;
+  font-family: var(--system-font-bold);
+}
+
+em,
+i {
+  font-family: "MatterSQ-RegularItalic", sans-serif;
+}
+
+figcaption {
+  font-family: var(--system-font-heading);
+  font-size: var(--system-font-size-caption);
+  font-weight: var(--system-font-weight-heading);
+  line-height: 1.25;
+}
+
+dt {
+  font-family: var(----system-font-heading);
+  font-weight: var(----system-font-weight-heading);
+}

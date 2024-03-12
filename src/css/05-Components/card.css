@@ -1,0 +1,87 @@
+.card {
+  background-color: var(--color-N00);
+  padding-inline: 1.88rem;
+  padding-block: 2.5rem;
+  border-radius: 0.63rem;
+
+  .icons {
+    display: flex;
+    gap: 0.62rem;
+    margin-block-end: 1.25rem;
+  }
+
+  & small {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: var(--system-font-weight-bold);
+    color: var(--color-G70);
+  }
+
+  & p {
+    font-size: 1rem;
+  }
+
+  & h3 {
+    font-size: var(--system-font-size-h3-clamp);
+    hyphens: auto;
+  }
+
+  & h4 {
+    hyphens: auto;
+  }
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-G80);
+  display: grid;
+  grid: [stack] 100% / [stack] 100%;
+  place-items: center;
+  border-radius: 0.63rem;
+  min-height: 12rem;
+
+  & > * {
+    grid-area: stack;
+    z-index: 2;
+  }
+
+  & h3 {
+    margin-block-end: 1.25rem;
+    color: var(--color-N00);
+  }
+
+  & svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  @media (max-width: 64em) {
+    & svg {
+      scale: 4;
+    }
+  }
+}
+
+.large-card {
+  & h3 {
+    font-size: 3.375rem;
+    margin-block-end: 1.25rem;
+  }
+
+  & h4 {
+    font-size: 2rem;
+    margin-block-end: 1.25rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .lower-card {
+    margin-block-start: 2rem;
+  }
+}

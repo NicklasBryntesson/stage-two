@@ -1,0 +1,57 @@
+@import "01-Setup/variables.css";
+@import "01-Setup/normalize.css";
+@import "01-Setup/reset.css";
+@import "01-Setup/fonts.css";
+
+@import "02-Elements/typography.css";
+@import "02-Elements/buttons.css";
+
+@import "03-Layout/layout.css";
+
+@import "04-Global/site-header.css";
+@import "04-Global/site-main.css";
+@import "04-Global/site-footer.css";
+
+@import "05-Components/hero.css";
+@import "05-Components/price-hero.css";
+@import "05-Components/case-hero.css";
+@import "05-Components/cases-grid.css";
+@import "05-Components/text-image.css";
+@import "05-Components/three-columns.css";
+@import "05-Components/quote.css";
+@import "05-Components/cta.css";
+@import "05-Components/card.css";
+@import "05-Components/faq.css";
+@import "05-Components/prices.css";
+@import "05-Components/services.css";
+@import "05-Components/terms.css";
+@import "05-Components/packages.css";
+@import "05-Components/case.css";
+@import "05-Components/body-text.css";
+
+.section-title {
+  margin-bottom: var(--margin-small-desktop);
+
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    font-size: var(--system-font-size-h2-clamp);
+    max-width: 50rem;
+    line-height: 1.2;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-block: 0;
+  }
+}
+
+small {
+  letter-spacing: 0.0875rem;
+  font-family: var(--system-font-bold);
+  font-weight: var(--system-font-weight-bold);
+}
