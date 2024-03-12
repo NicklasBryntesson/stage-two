@@ -68,8 +68,9 @@
 
 .large-card {
   & h3 {
-    font-size: 3.375rem;
+    font-size: var(--system-font-size-h2-clamp);
     margin-block-end: 1.25rem;
+    hyphens: auto;
   }
 
   & h4 {

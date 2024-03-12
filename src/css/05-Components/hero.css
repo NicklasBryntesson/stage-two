@@ -2,7 +2,7 @@
   height: 80vh;
   width: 100%;
   position: relative;
-  background-image: url("/images/bg-hero-horizontal.jpg");
+  background-image: url("./images/bg-hero-horizontal.jpg");
   background-position: center center;
   background-size: cover;
   z-index: 10;
