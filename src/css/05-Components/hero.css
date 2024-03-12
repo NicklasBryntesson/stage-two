@@ -2,7 +2,7 @@
   height: 80vh;
   width: 100%;
   position: relative;
-  background-image: url("./images/bg-hero-horizontal.jpg");
+  background-image: url("/images/bg-hero-horizontal.jpg");
   background-position: center center;
   background-size: cover;
   z-index: 10;
@@ -55,7 +55,7 @@
   .hero-section {
     min-height: 0;
     height: 65vh;
-    background-image: url("images/bg-hero-vertical.jpg");
+    background-image: url("/images/bg-hero-vertical.jpg");
 
     & .hero-inner {
       & .hero-content {
@@ -68,7 +68,7 @@
 @media (max-width: 48em) {
   .hero-section {
     height: 75vh;
-    background-image: url("images/bg-hero-vertical.jpg");
+    background-image: url("/images/bg-hero-vertical.jpg");
 
     & .hero-inner {
       padding-bottom: var(--margin-small-mobile);
