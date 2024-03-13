@@ -21,6 +21,10 @@ export default defineConfig({
         index: resolve(__dirname, "index.html"),
         priser: resolve(__dirname, "priser/index.html"),
         kundcase: resolve(__dirname, "kundcase/index.html"),
+        esem: resolve(
+          __dirname,
+          "kundcase/eskilstuna-strangnas-energi-miljo/index.html"
+        ),
       },
     },
   },
