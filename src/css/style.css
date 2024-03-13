@@ -37,9 +37,12 @@
   h4,
   h5,
   p {
+    font-family: var(--system-font-body);
     font-size: var(--system-font-size-h2-clamp);
+    font-weight: var(--system-font-weight-body);
     max-width: 50rem;
     line-height: 1.2;
+    letter-spacing: -0.0675rem;
   }
 
   h2,

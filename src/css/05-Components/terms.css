@@ -48,9 +48,34 @@
     }
   }
 }
-/* TODO: fix when breaking down! */
-@media (max-width: 64em) {
-}
 
-@media (max-width: 48em) {
+@media (max-width: 64em) {
+  .terms-section {
+    & .full-grid {
+      & ul {
+        padding-inline-start: 1.5rem;
+
+        & li {
+          margin-block-end: 0.5rem;
+
+          &::marker {
+            color: var(--color-G50);
+          }
+
+          &::after {
+            display: none;
+          }
+
+          &::before {
+            content: "•";
+            font-size: 0.75rem;
+            color: var(--color-G50);
+            margin-inline-end: 0.5rem;
+            position: absolute;
+            inset-inline-start: -1rem;
+          }
+        }
+      }
+    }
+  }
 }

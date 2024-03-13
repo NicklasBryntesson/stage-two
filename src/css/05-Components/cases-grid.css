@@ -4,16 +4,16 @@
 
   & .cases {
     list-style: none;
-    padding-inline-start: 0;
+    padding-inline: 0;
   }
 
   & .content-grid {
     align-items: center;
+    width: 100%;
   }
 
   & .case {
     padding-block: 0;
-    margin-inline-end: var(--big-padding-block);
 
     & :last-of-type {
       margin-inline-end: 0;

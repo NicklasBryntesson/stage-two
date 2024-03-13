@@ -48,9 +48,9 @@
 
   .toggle {
     border: none;
+    display: none;
     background-color: transparent;
     padding: 0;
-    display: none;
   }
 
   .nav-container {
@@ -80,6 +80,10 @@
       display: flex;
       gap: 1rem;
       margin-inline-start: 1rem;
+
+      .btn {
+        font-size: 1.125rem;
+      }
     }
   }
 }

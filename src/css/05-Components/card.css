@@ -47,6 +47,7 @@
   }
 
   & h3 {
+    text-align: center;
     margin-block-end: 1.25rem;
     color: var(--color-N00);
   }
@@ -74,7 +75,7 @@
   }
 
   & h4 {
-    font-size: 2rem;
+    font-size: var(--system-font-size-h3-clamp);
     margin-block-end: 1.25rem;
   }
 
